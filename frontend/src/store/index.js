@@ -37,5 +37,8 @@ export default new Vuex.Store({
           commit("updateLoading", false);
         });
     },
+    clearSearch({commit}) {
+        commit("updateSearchResults", [])
+    }
   },
 });

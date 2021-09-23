@@ -21,6 +21,7 @@ The behaviours that are listed below are only assumptions based on the design gi
 - There should be an indication that the component is still loading results. 
 - Interactions when clicking the text or pictures hasn't been provided but it can be assumed that this may have some sort of use, whether it be expanding the image or allowing downloads or linking to another page somewhere. 
 - There's no delay to search results when typing. (For optimisation purposes you could add a slight delay and check for further input prior to sending a request for data)
+- Long names are not fully displayed on the page. 
 
 
 ## Notes
