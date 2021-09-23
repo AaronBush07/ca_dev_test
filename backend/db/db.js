@@ -21,7 +21,7 @@ try {
 */
 dummy.forEach(async (val) => {
   const queryText = pgp.as.format(
-    `INSERT INTO PRODUCTS(id, item) VALUES ($1, $2)`,
+    `INSERT INTO ITEMS (id, item) VALUES ($1, $2)`,
     [val.id, val.item]
   );
   db.public.one(queryText);
