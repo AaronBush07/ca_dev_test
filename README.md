@@ -30,7 +30,7 @@ The behaviours that are listed below are only assumptions based on the design gi
 - Due to time constraints, I haven't added any validation or tests. Examples of tests I've written can be found my other repositories. 
   
 ## Backend
-- Navigate to the backend folder and run '''npm install''' then run '''nodemon''' to start the backend server. It should be running on http://localhost:3000
+- Navigate to the backend folder and run ```npm install``` then run ```nodemon``` to start the backend server. It should be running on http://localhost:3000
 
 ## Frontend
-- Navigate to the frontend folder and run '''npm install''' then run '''npm run serve''' to start the frontend server. It should be running on http://localhost:8080
+- Navigate to the frontend folder and run ```npm install``` then run ```npm run serve``` to start the frontend server. It should be running on http://localhost:8080
