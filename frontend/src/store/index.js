@@ -11,7 +11,7 @@ export default new Vuex.Store({
     loadingMessage: "Loading... Please wait",
   },
   mutations: {
-    updateResults(state, payload) {
+    updateSearchResults(state, payload) {
       state.results = payload;
     },
     updateLoading(state, payload) {
@@ -35,7 +35,6 @@ export default new Vuex.Store({
         .catch(() => {
           console.log("Server error");
           commit("updateLoading", false);
-          commit("updateLoadingMessage", "Server Error. Please try again");
         });
     },
   },

@@ -5,9 +5,9 @@
 ### What are some missing edge cases you think this design hasn't covered?
 - What is the result for an empty string? Are all results returned or no results returned?
 - Is the search matching on whole words or partial words?
-- Should there be a limit to how many results are returned? What happens when there are more than 8 results? 
+- Should there be a limit to how many results are returned? What happens when there are more than 8 results? What happens if there's 1000 results?
 - What happens to the design on different sized screens? The picture size may be too small to discern any use to the user if there are too many columns. 
-- Special characters are accepted. 
+- Are special characters are accepted?
 
 
 ### List out some behaviours that this component should have: 
@@ -20,6 +20,7 @@ The behaviours that are listed below are only assumptions based on the design gi
 - Empty strings should not be accepted or expected to return any results. 
 - There should be an indication that the component is still loading results. 
 - Interactions when clicking the text or pictures hasn't been provided but it can be assumed that this may have some sort of use, whether it be expanding the image or allowing downloads or linking to another page somewhere. 
+- There's no delay to search results when typing. (For optimisation purposes you could add a slight delay and check for further input prior to sending a request for data)
 
 
 ## Notes
