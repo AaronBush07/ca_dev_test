@@ -18,6 +18,7 @@ The behaviours that are listed below are only assumptions based on the design gi
 - The size of the boxes should remain the same size (relative to each other) no matter the number of results. ie. 5 results will show 4 columns and 2 rows, with each box remaining the same size. The last box will be left aligned. 
 - The results should continually update upon each keystroke / edit to the search box. 
 - Empty strings should not be accepted or expected to return any results. 
+- There should be an indication that the component is still loading results. 
 - Interactions when clicking the text or pictures hasn't been provided but it can be assumed that this may have some sort of use, whether it be expanding the image or allowing downloads or linking to another page somewhere. 
 
 

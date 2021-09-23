@@ -1,29 +1,36 @@
 <template>
-  <div class="search">
-
-  </div>
+  <v-container fill-height>
+    <v-row align="center">
+      <v-col cols="12">
+        <v-text-field
+        
+        ></v-text-field>test
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
+import { mapState } from "vuex";
 export default {
-  name: 'AutoSearch'
-}
+  name: "AutoSearch",
+  computed: {
+    ...mapState({
+      results: "results",
+      localLoading: "localLoading",
+      loadingMessage: "loadingMessage",
+    }),
+    resultsCount() {
+      return this.results.length;
+    },
+  },
+  methods: {
+
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
 </style>
