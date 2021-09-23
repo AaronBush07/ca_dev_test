@@ -13,7 +13,7 @@
     <v-row>
       <v-col v-for="result in results" :key="result.id" cols="3">
         <div class="box">
-          <span class="picture"><img src="../assets/logo.png" alt="Test"></span>
+          <span class="picture"><img :src="randomPicture(result.item)" alt="Test"></span>
           <span>{{formatText(result.item)}}</span>
         
         </div>
@@ -58,9 +58,9 @@ export default {
         return text.substr(0,7).padEnd(10, '...')
       else return text
     },
-    randomPicture() {
-
-      return '../assets/logo.png'
+    randomPicture(text) {
+      let seed = text.trim()
+      return `https://picsum.photos/seed/${seed}/100/100`
     }
   },
 };
