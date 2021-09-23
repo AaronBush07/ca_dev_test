@@ -1,40 +1,43 @@
 <template>
-  <v-container fill-height>
-    <v-row align="center">
+  <v-container>
+    <v-row>
       <v-col cols="12">
         <v-text-field
           solo
-          align="center"
           append-icon="fa-search"
           @keyup="fetchResults"
           v-model="search"
         ></v-text-field>
       </v-col>
     </v-row>
-    <v-row align="left">
-      <v-col v-for="result in results" :key="result.id" cols="3">
-        <v-row>
-          <v-col cols="12">
-            <span class="picture"
-              >
-              <v-img
-                lazy-src="../assets/logo.png"
-                width="100%"
-                :src="randomPicture(result.item)"
-              />
+    <v-card>
+      <v-row>
+        <v-col v-for="result in results" :key="result.id" cols="3">
+          <v-row>
+            <v-col cols="12" align="center">
+              <span>
+                <v-img
+                  lazy-src="../assets/logo.png"
+                  width="100%"
+                  class="rounded-lg"
+                  max-width="300px"
+                  :src="randomPicture(result.item)"
+                />
               </span>
-          </v-col>
-        </v-row>
-        <v-row>
-          <v-col cols="12" class="itemText"
-            ><span>{{ result.item }}</span></v-col>
-        </v-row>
-      </v-col>
-      <v-spacer/>
-    </v-row>
-    <v-row align="center">
-      <v-col cols="12">{{ resultsCount }} result</v-col>
-    </v-row>
+            </v-col>
+          </v-row>
+          <v-row>
+            <v-col cols="12" class="itemText"
+              ><span>{{ result.item }}</span></v-col
+            >
+          </v-row>
+        </v-col>
+        <v-spacer />
+      </v-row>
+      <v-row align="center">
+        <v-col cols="12">{{ resultsCount }} result</v-col>
+      </v-row>
+    </v-card>
   </v-container>
 </template>
 

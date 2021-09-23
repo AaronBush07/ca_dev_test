@@ -1,6 +1,8 @@
 <template>
   <div id="app">
+    <v-app>
     <auto-search/>
+    </v-app>
   </div>
 </template>
 

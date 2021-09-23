@@ -27,7 +27,7 @@ The behaviours that are listed below are only assumptions based on the design gi
 ## Notes
 - Component can be found in frontend/src/components/AutoSearch.vue. There is a vuex store located in frontend/src/store/index.js.
 - There is a backend and frontend part to this project. You will need two terminals running to run this. 
-- Due to time constraints, I haven't added any validation or tests. Examples of tests I've written can be found my other repositories. 
+- Due to time constraints, I haven't added any validation or tests. Examples of tests I've written can be found in my other repositories. 
   
 ## Backend
 - Navigate to the backend folder and run ```npm install``` then run ```nodemon``` to start the backend server. It should be running on http://localhost:3000
